@@ -8716,8 +8716,8 @@ const unsigned char robo_girl_133 [] PROGMEM = {
 };
 
 // Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 135200)
-const int robo_girl_frame_allArray_LEN = 130;
-const unsigned char* robo_girl_frame_allArray[130] = {
+const int robo_girlallArray_LEN = 130;
+const unsigned char* robo_girlallArray[130] = {
 	robo_girl_001,
 	robo_girl_002,
 	robo_girl_003,

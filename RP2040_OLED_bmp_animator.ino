@@ -17,7 +17,7 @@
 
 // Include the animation files,
 // playcount defines the numer of times an animation will loop for
-#include "babel.h"
+#include "mecha.h"
 #include "robo_girl.h"
 #include "blank.h"
 
@@ -42,28 +42,28 @@ void setup() {
   display.clearDisplay();
   display.drawBitmap(0, 0, boot, 128, 64, WHITE);
   display.display();
-  delay(3000);
+  delay(5000);
 }
 
 // ---------------------------------------------------------------
 // Animation loops
 void loop() {
 
-  // Robot Girl demo
-  for (int j = 0; j < robo_girlPlayCount; j++) {
-    for (int i = 0; i < robo_girl_frame_allArray_LEN; i++) {
+  // Mecha demo
+  for (int j = 0; j < mechaPlayCount; j++) {
+    for (int i = 0; i < mechaallArray_LEN; i++) {
       display.clearDisplay();
-      display.drawBitmap(0, 0, robo_girl_frame_allArray[i], 128, 64, WHITE);
+      display.drawBitmap(0, 0, mechaallArray[i], 128, 64, WHITE);
       display.display();
       delay(frameDelay);
     }
   }
-
-  // Babel demo
-  for (int j = 0; j < babelPlayCount; j++) {
-    for (int i = 0; i < babel_frame_allArray_LEN; i++) {
+  
+  // Robot Girl demo
+  for (int j = 0; j < robo_girlPlayCount; j++) {
+    for (int i = 0; i < robo_girlallArray_LEN; i++) {
       display.clearDisplay();
-      display.drawBitmap(0, 0, babel_frame_allArray[i], 128, 64, WHITE);
+      display.drawBitmap(0, 0, robo_girlallArray[i], 128, 64, WHITE);
       display.display();
       delay(frameDelay);
     }
